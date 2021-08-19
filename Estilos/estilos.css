@@ -61,16 +61,22 @@ html {
 
 .principal {
     grid-area: principal;
-    background-image: url(../Recursos/BNP_8106.JPG);
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+#carouselExampleControls {
+    bottom: 51.5%;
+    z-index: 1;
+}
+
 
 .principal__titulos {
     flex-direction: column;
     text-align: center;
     display: inline-flex;
     transform: translate( 80px, 300px);
+    z-index: 2;
 }
 
 .principal__logo {
