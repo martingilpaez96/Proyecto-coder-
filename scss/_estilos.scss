@@ -1,5 +1,6 @@
 @import '_fuentes.scss';
 @import '_colores.scss';
+@import '_media-index.scss';
 
 * {
     padding: 0;
@@ -44,6 +45,10 @@ html {
         color: $color-fuente;
     }
 
+    .navbar-responsive {
+        display: none;
+    }
+
 }
 
 main {
@@ -61,8 +66,12 @@ main {
         font-family: $fuente;
     }
 
+    #titulo-navbar {
+        display: none;
+    }
+
     #principal-carousel {
-        bottom: 300px;
+        bottom: 350px;
     }
 }
 
@@ -135,12 +144,18 @@ main {
         justify-content: center;
         display: flex;
         padding-bottom: 40px;
-    }
-
-    #botonid {
+    
+        #botonid {
         padding: 15px;
         font-family: $fuente;
-        color: $color-fuente;
+        background-color: none;
+        border-color: $color-fuente;
+
+            a {
+                text-decoration: none;
+                color: $color-fuente;
+            }
+        }
     }
 } 
     

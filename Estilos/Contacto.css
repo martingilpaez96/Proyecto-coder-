@@ -3,139 +3,143 @@
     margin: 0;
 }
 
-html { 
+html {
     height: 100%;
 }
 
-.grilla {
-    height: 100%;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(12, 1fr);
-    grid-template-areas: 
-    "header header header header header header"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "principal principal principal principal principal principal"
-    "footer footer footer footer footer footer";
-}
 
 .header {
-    grid-area: header;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px;
+    padding: 5px 30px;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
 }
 
-.header h1 nav {
+    .header h1 nav {
     display: flex;
     list-style: none;
-}
+    }
 
-.header h1 nav a {
-    margin-left: 10px;
-}
+    .header h1 nav a {
+        margin-left: 10px;
+    }
 
-.header h1 {
-    color: cornsilk;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: italic;
-}
+    .header h1 {
+        color: cornsilk;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: italic;
+    }
 
-.header a {
-    color: cornsilk;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    text-decoration: none;
-    padding: 5px;
-}
+    .header a {
+        color: cornsilk;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-style: normal;
+        text-decoration: none;
+        padding: 5px;
+    }
 
-.principal {
-    grid-area: principal;
-    background-image: url(../Recursos/fondoportfolio.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
-.principal__derecha {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
-    margin-right: 400px;
-    margin-left: 300px;
+.principal-contacto {
     position: relative;
-    bottom: 60%;
-    left: 25%;
-}
+    background: linear-gradient(to bottom, #171313, black);
+    }
 
-.principal__izquierda {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding-left: 200px;
-    padding-right: 200px;
-    margin-right: 300px;
-    margin-left: 400px;
-    position: relative;
-    top: 20%;
-    right: 25%;
-}
+        .contacto-imagen {
+            position: relative;
+            display: inline-block;
+        }
 
-h2 {
-    color: cornsilk;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 10px;
-    font-size: 25px;
-}
+        .contacto-imagen-img {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            filter: brightness(50%);
+        }
 
-label {
-    color: cornsilk;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 7px;
-    font-size: 20px;
-}
+        #contacto-principal-carousel {
+            padding-bottom: 170px;
+        }
 
-h3 {
-    color: cornsilk;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 7px;
-    font-size: 20px;
-}
+        #contacto-carousel-titulos {
+            color: cornsilk;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
 
+        .principal-formulario {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+        }
+
+        .principal-formulario-titulo {
+            display: flex;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        #principal-formulario-titlabel {
+            display: flex;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        .principal-redes {
+            display: flex;
+            justify-content: center;
+        }
+
+        #principal-redes-grilla {
+            background: none;
+        }
+
+        .grilla-titulos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grilla-contenido {
+            display: flex;
+            justify-content: center;
+        }
+
+        .grilla-contenido-logos {
+            display: flex;
+            justify-content: center;
+        }
+
+        .logos-redes {
+            padding: 20px;
+        }
+
+        .map-responsive {
+            display: flex;
+            justify-content: center;
+        }
+
+    
 .footer {
-    grid-area: footer;
     background-color: black;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 30px;
 }
 
-.footer section h3 {
-    display: flex;
+.container {
+    background-color: black;
+    padding: 50px;
+}
+
+.col {
+    color: cornsilk;
+}
+
+#lista {
     list-style: none;
 }
-
-.footer section h3 a {
-    margin-left: 10px;
-}
-
-.footer__pieDePagina {
-    color: cornsilk;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 15px;
-    font-weight: normal;
-}
+    #listak {
+        text-decoration: none;
+        color: cornsilk;
+    }
