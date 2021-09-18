@@ -19,7 +19,7 @@
     <link rel="shortcut icon" href="../Redes/favicon.ico" type="image/x-icon">
 </head>
 <body class="grilla">
-    <header class="header">
+    <header id="body-header" class="header">
         <h1 class="header__titulo">MARTÍN GIL PÁEZ</h1>
         <nav>
             <a href="../index.html">Inicio</a>
@@ -28,9 +28,26 @@
             <a href="./Contacto.html">Contacto</a>
         </nav> 
     </header>
+    <div class="navbar-responsive">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div id="navbar-responsive-collapse" class="bg-dark p-4">
+            <a href="../index.html">Inicio</a>
+            <a href="./Portfolio.html">Portfolio</a>
+            <a href="./Preguntasfrecuentes.html">Preguntas frecuentes</a>
+            <a href="./Contacto.html">Contacto</a>
+          </div>
+        </div>
+        <nav id="navbar-responsive-color" class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+        </nav>
+      </div>
     <main class="principal-contacto">
         <div class="contacto-imagen">
-            <img class="contacto-imagen-img" src="../Recursos/sliders/slider3.jpg" class="d-block w-100" alt="slider3">
+            <img class="contacto-imagen-img" src="../Recursos/sliders/slider3 (1).jpg" class="d-block w-100" alt="slider3">
             <div id="contacto-principal-carousel" class="carousel-caption d-none d-md-block">
                 <div id="contacto-carousel-titulos" class="animate__animated animate__fadeInDown">
                     <h2>CONTACTO</h2>
@@ -85,14 +102,14 @@
             <div id="principal-redes-grilla" class="container">
                 <div class="row">
                     <div class="col">
-                        <h2 class="grilla-titulos">SEGUIME EN MIS REDES</h2>
+                        <h2 id="responsive-titulos" class="grilla-titulos">SEGUIME EN MIS REDES</h2>
                             <div class="grilla-contenido-logos">
                                 <a class="logos-redes" href="https://www.instagram.com/martingilpaez/"><img src="../Redes/instagram.svg" alt="logoig" height="50" width="50"></a> 
                                 <a class="logos-redes" href="https://wa.me/5493513233047"><img src="../Redes/whatsapp.svg" alt="logowsp" height="50" width="50"></a>   
-                            </div class="grilla-contenido-logos">           
+                            </div>           
                     </div>
                     <div class="col">
-                        <h2 class="grilla-titulos">TELÉFONO DE CONTACTO</h2>
+                        <h2 id="responsive-titulos" class="grilla-titulos">TELÉFONO DE CONTACTO</h2>
                             <h3 class="grilla-contenido">+54 (351) 153233047</h3>
                     </div>
                 </div>
@@ -104,24 +121,24 @@
     </main>
     <footer class="footer">
         <div class="container">
-          <div class="row row-cols-4">
-            <div class="col">
+          <div id="footer-responsive" class="row row-cols-4">
+            <div id="footer-responsive-none" class="col">
               <img src="../Redes/logomgp.svg" alt="logomgp" width="70%"></div>
-            <div class="col">
+            <div id="footer-responsive-yes" class="col">
               <h5>Contacto</h5>
               <p><span class="icon-mail2"></span> martingp96@icloud.com</p> 
               <p><span class="icon-mobile"></span> +54 (351) 153233047</p> 
               <p><span class="icon-location"></span> Av. Emilio Olmos 91, primer piso "D", Córdoba Capital, Argentina.</p>
             </div>
-            <div class="col">
+            <div id="footer-responsive-none" class="col">
               <h5>Enlaces rápidos</h5>
                   <ul class="lista">
                       <li id="lista"><a id= "listak" href="./Portfolio.html">Portfolio</a></li>     
                       <li id="lista"><a id= "listak" href="./Preguntasfrecuentes.html">Preg. frecuentes</a></li>      
-                      <li id="lista"><a id= "listak" href="./Contacto.html">Contacto</a></li>
+                      <li id="lista"><a id= "listak" href="./Contacto.html">Contacto</a></li>  
                   </ul>
             </div>
-            <div class="col">
+            <div id="footer-responsive-yes" class="col">
               <h5>Horario de atención</h5>
                   <p>Lun - vie: 10:00 - 19:00 </p>     
                   <p>Sábado y Domingo: Cerrado</p>    

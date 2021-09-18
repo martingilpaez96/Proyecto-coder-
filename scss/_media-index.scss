@@ -83,7 +83,11 @@
     }
 
     #footer-responsive {
-        display: inline-grid;
+        display: block;
+        
+        #footer-responsive-yes {
+            display: contents;
+        }
 
         #footer-responsive-none{
             display: none;
